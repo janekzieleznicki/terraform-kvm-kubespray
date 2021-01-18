@@ -25,10 +25,11 @@ vm_ssh_private_key = "~/.ssh/id_rsa"
 vm_ssh_known_hosts = "true"
 
 # Linux distribution that will be used on VMs. Possible values are: [ubuntu, debian, centos] #
-vm_distro = ""
+vm_distro = "centos"
 
 # Source of linux image. It can be path to an image on host's filesystem or an URL #
-vm_image_source = ""
+# vm_image_source = "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-disk-kvm.img"
+vm_image_source = "https://cloud.centos.org/centos/8-stream/x86_64/images/CentOS-Stream-GenericCloud-8-20201217.0.x86_64.qcow2"
 
 # The prefix added to names of VMs #
 vm_name_prefix = "k8s"
@@ -155,10 +156,10 @@ vm_worker_node_label = "node"
 k8s_kubespray_url = "https://github.com/kubernetes-sigs/kubespray.git"
 
 # The version of Kubespray that will be used to deploy Kubernetes #
-k8s_kubespray_version = "v2.14.2"
+k8s_kubespray_version = "v2.15.0"
 
 # The Kubernetes version that will be deployed #
-k8s_version = "v1.19.3"
+k8s_version = "v1.19.7"
 
 # The overlay network plugin used by the Kubernetes cluster (flannel/weave/calico/cilium/canal/contiv/kube-router) #
 k8s_network_plugin = "calico"
